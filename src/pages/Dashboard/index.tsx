@@ -67,7 +67,7 @@ const Dashboard: React.FC = () => {
               <img src={income} alt="Income" />
             </header>
             <h1 data-testid="balance-income">
-              {`R$ ${formatValue(Number(balance.income))}`}
+              {formatValue(Number(balance.income))}
             </h1>
           </Card>
           <Card>
@@ -76,7 +76,7 @@ const Dashboard: React.FC = () => {
               <img src={outcome} alt="Outcome" />
             </header>
             <h1 data-testid="balance-outcome">
-              {`R$ ${formatValue(Number(balance.outcome))}`}
+              {formatValue(Number(balance.outcome))}
             </h1>
           </Card>
           <Card total>
@@ -85,7 +85,7 @@ const Dashboard: React.FC = () => {
               <img src={total} alt="Total" />
             </header>
             <h1 data-testid="balance-total">
-              {`R$ ${formatValue(Number(balance.total))}`}
+              {formatValue(Number(balance.total))}
             </h1>
           </Card>
         </CardContainer>
